@@ -7,7 +7,7 @@
 ---
 
 
-![Sonet Video]()
+[![Sonet Video](https://img.youtube.com/vi/T_DJ4dWNjbQ/0.jpg)](https://www.youtube.com/watch?v=T_DJ4dWNjbQ)
 
 ## Основной стек технологий
 
