@@ -1,0 +1,33 @@
+.sidebar {
+    min-height: 200px;
+    grid-area: sidebar;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.sidebar li {
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.sidebar li:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.sidebar li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+
+.count {
+    margin-left: auto;
+    color: #00ffe7;
+}
+
+
+.sidebar li a i {
+    font-size: 20px;
+    margin-right: 10px;
+}

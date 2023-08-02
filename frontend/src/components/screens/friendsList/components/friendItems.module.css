@@ -1,0 +1,36 @@
+.elementContent {
+    display: grid;
+    grid-template-areas: 'info actions';
+}
+
+.userInfo {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullName {
+    font-weight: 700;
+}
+
+.username {
+    color: rgb(123, 123, 123);
+}
+
+.actions {
+    grid-area: actions;
+    justify-self: self-end;
+    display: grid;
+    gap: 5px;
+}
+
+.actions span {
+    background-color: rgb(96, 96, 96);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.success {
+    margin-left: 50%;
+}

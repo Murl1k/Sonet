@@ -1,0 +1,39 @@
+.message {
+    display: flex;
+    gap: 2px;
+}
+
+.message img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.messageText {
+    background-color: rgb(46, 46, 46);
+    border-radius: 15px;
+    border: 2px solid #4e4e4e;
+    padding: 10px;
+    align-self: center;
+    max-width: 50%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.messageTime {
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+.readed {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.readed i {
+    font-size: 20px;
+}

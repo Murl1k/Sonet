@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 18px;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, input, textarea, select {
+  font: optional;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+i {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+div ::-webkit-scrollbar-track {
+  background: #545454;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #949494;
+}
+
+div ::-webkit-scrollbar-thumb {
+  background: rgb(134, 134, 134);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #161616;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

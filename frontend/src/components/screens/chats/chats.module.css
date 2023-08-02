@@ -1,0 +1,21 @@
+.chats {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(46, 46, 46);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #4e4e4e;
+    box-shadow: 0 0 5px #000000;
+}
+
+.chats h1 {
+    margin-bottom: 20px;
+}
+
+.chatsList {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    overflow-x: auto;
+}

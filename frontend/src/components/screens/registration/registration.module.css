@@ -1,0 +1,65 @@
+.heading {
+    margin-bottom: 30px;
+}
+
+.noAccount {
+    margin-top: 20px;
+}
+
+.noAccount, .heading {
+    color: #fff;
+    text-align: center;
+}
+
+.noAccount a {
+    color: rgb(44, 184, 184);
+    text-decoration: none;
+}
+
+.input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.accountButton {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #005587;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accountButton:hover {
+    background-color: #097bbf;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.accountForm {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.accountForm form {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}

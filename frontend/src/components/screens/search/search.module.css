@@ -1,0 +1,24 @@
+.searchPage {
+    display: grid;
+    grid-template-areas: 'query query' 
+                         'result sidebar';
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.searchQuery, .searchQuery span {
+    grid-area: query;
+    font-size: 25px;
+}
+
+.result {
+    grid-area: result;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}

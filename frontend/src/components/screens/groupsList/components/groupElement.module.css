@@ -1,0 +1,13 @@
+.innerContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.groupName {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.followersCount {
+    font-weight: lighter;
+}

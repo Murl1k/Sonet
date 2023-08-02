@@ -1,0 +1,19 @@
+.friendsList {
+    display: grid;
+    grid-template-areas: 'header header'
+                         'friends sidebar';
+    gap: 20px;
+    align-items: start;
+    grid-template-columns: 2fr 1fr;
+}
+
+.friendsList h1 {
+    margin-bottom: 10px;
+    grid-area: header;
+}
+
+.friends {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

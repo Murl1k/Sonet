@@ -1,0 +1,20 @@
+.notificationsPage {
+    display: grid;
+    grid-template-areas: 'header remove' 'notifications notifications';
+    gap: 10px;
+}
+
+.removeBox {
+    margin-left: auto;
+}
+
+.remove {
+    cursor: pointer;
+}
+
+.notifications {
+    grid-area: notifications;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

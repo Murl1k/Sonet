@@ -1,0 +1,85 @@
+.post {
+    padding: 20px;
+    border: 1px solid rgb(47, 47, 47);
+    background-color: rgb(50, 49, 49);
+    display: grid;
+    grid-template-areas: 'header actions'
+                         'content content'
+                         'image image'
+                         'reactions reactions';
+    grid-template-rows: 45px auto 6fr;
+    border-radius: 15px;
+    grid-row-gap: 15px;
+}
+
+.postHeader {
+    display: grid;
+    grid-template-areas: 'avatar author'
+                          'avatar date';
+    grid-template-columns: 60px auto;
+    grid-column-gap: 15px;
+}
+
+.postAuthorAvatarWrapper {
+    grid-area: avatar;
+}
+
+.postAuthorAvatar {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.postHeader b {
+    grid-area: author;
+}
+
+.postDate {
+    grid-area: date;
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+
+.postActions {
+    grid-area: actions;
+    justify-self: end;
+}
+
+.postActions i {
+    cursor: pointer;
+}
+
+.postImage {
+    grid-area: image;
+}
+
+
+.postImage img{
+    object-fit: cover;
+    max-width: 700px;
+    max-height: 500px;
+}
+
+.postReactions {
+    grid-area: reactions;
+    justify-self: start;
+}
+
+.content {
+    grid-area: content;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.likes {
+    display: flex;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.likes:hover {
+    background-color: rgb(69, 69, 69);
+    cursor: pointer;
+}

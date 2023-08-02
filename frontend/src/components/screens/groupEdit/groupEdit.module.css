@@ -1,0 +1,51 @@
+.groupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(60, 60, 60);
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.groupForm div {
+    display: flex;
+    flex-direction: column;
+}
+
+.groupForm div label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.groupForm div input {
+    color: white;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: inherit;
+    box-shadow: 0 0 0 0.5px rgb(150, 150, 150);
+}
+
+.groupForm div input:focus {
+    box-shadow: 0 0 0 0.5px rgb(215, 215, 215);
+}
+
+
+.groupForm button {
+    background-color: white;
+    padding: 7px;
+    width: 70%;
+    outline: 0;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.groupForm button:hover {
+    background-color: rgb(188, 188, 188);
+}

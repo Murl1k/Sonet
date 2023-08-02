@@ -1,0 +1,84 @@
+/* Хедер */
+
+.header {
+    padding: 10px 13% 0 13%;
+    display: flex;
+    background-color: rgb(56, 57, 59);
+    height: 60px;
+    gap: 10px;
+}
+
+
+.logo {
+    font-size: 30px;
+    color: white
+}
+
+.logo img {
+    height: 90%;
+}
+
+/* Поиск */
+
+.search {
+    min-width: 15%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 80%;
+}
+
+.innerSearch {
+    background-color: rgb(140, 140, 140);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchBox {
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchBox input {
+    width: 95%;
+    background-color: inherit;
+    outline: none;
+    border: none;
+}
+
+.searchBox input::placeholder, .searchBox input:focus {
+    color: rgb(255, 255, 255);
+}
+
+.searchBox i {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.searchSuggestion {
+    padding: 10px;
+    background-color: rgb(140, 140, 140);
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.avatar img {
+    background-color: #4e4e4e;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.exit, .notifications, .edit {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.exit i, .notifications i, .edit i {
+    font-size: 40px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,54 @@
+.userPreview {
+    display: flex;
+    padding: 30px;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.userPreview img {
+    object-fit: cover;
+    flex-basis: 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.userDescription {
+    flex-basis: 47%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.userStatus {
+    background-color: rgb(70, 70, 70);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.userStats {
+    flex-basis: 20%;
+    display: grid;
+}
+
+.userActions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.userActions span {
+    background-color: rgb(76, 76, 76);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.userActions span:hover {
+    background-color: rgb(136, 136, 136);
+}
+
+.username {
+    color: rgb(157, 157, 157);
+}
