@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/backend
+    environment:
+      - DB_HOST=database
+      - DB_USER=postgres
+      - DB_NAME=postgres
+      - DB_PASS=123123
+    
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:8000"
+    
+    depends_on:
+      - database
+  
+  database:
+    image: postgres:15.3-alpine3.18
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123123
+    volumes:
+      - pgdata:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    stdin_open: true
+    tty: true
+
+volumes:
+  pgdata:
+

@@ -1,0 +1,13 @@
+.userProfile {
+    display: grid;
+    grid-template-areas: 'preview' 'posts';
+    gap: 10px;
+}
+
+.userPosts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}

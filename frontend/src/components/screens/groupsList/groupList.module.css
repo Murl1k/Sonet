@@ -1,0 +1,68 @@
+.groupsPage {
+    display: grid;
+    grid-template-areas: 'header header' 
+                          'groups sidebar';
+    gap: 20px;
+    align-items: start;
+    grid-template-columns: 2fr 1fr;
+}
+
+.groupsPage h1 {
+    margin-bottom: 10px;
+    grid-area: header;
+}
+
+.groups {
+    grid-area: groups;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.createGroup {
+    grid-area: sidebar;
+    background-color: rgb(57, 57, 57);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #4e4e4e;
+    box-shadow: 0 0 5px #000000;
+}
+
+.createGroup:hover {
+    cursor: pointer;
+    background-color: rgb(85, 85, 85);
+}
+
+.groupFormWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.groupFormBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.groupFormContainer {
+    z-index: 2;
+}
+
+

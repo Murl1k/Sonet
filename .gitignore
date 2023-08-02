@@ -1,0 +1,11 @@
+# Backend
+sonet-venv
+backend/venv/
+backend/media
+**/__pycache__/
+
+# Frontend
+frontend/node_modules
+
+# IDE
+**/.idea/

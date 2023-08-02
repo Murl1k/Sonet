@@ -1,0 +1,49 @@
+.popUpNotifications {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 500px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+    gap: 5px;
+    z-index: 1;
+}
+
+.notification {
+    display: flex;
+    width: 300px;
+    max-height: 100px;
+    padding: 20px;
+    gap: 10px;
+    background-color: rgb(57, 57, 57);
+    border-radius: 20px;
+}
+
+.notification img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.content {
+    word-break: break-word;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.delete {
+    margin-left: auto;
+    cursor: pointer;
+    margin-bottom: auto;
+    z-index: 2;
+}
+
+.delete i {
+    font-size: 16px;
+}

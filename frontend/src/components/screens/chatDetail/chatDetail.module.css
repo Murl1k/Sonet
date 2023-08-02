@@ -1,0 +1,84 @@
+.messager {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: rgb(46, 46, 46);
+    border-radius: 15px;
+    border: 2px solid #4e4e4e;
+    box-shadow: 0 0 5px #000000;
+    padding: 30px;
+    gap: 2px;
+}
+
+.messagerHeader {
+    flex-basis: 15%;
+}
+
+.interlocutor {
+    display: flex;
+    gap: 20px;
+}
+
+.interlocutor img {
+    object-fit: cover;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.interlocutorInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.interlocutorName {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.userTag {
+    color: #7b7b7b;
+}
+
+.messagesArea {
+    flex-basis: 60vh;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 60vh;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.messageInput {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+
+.messageInput textarea {
+    font-size: 15px;
+    flex-basis: 90%;
+    border-radius: 10px;
+    background-color: #7b7b7b;
+    outline: 0;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    resize: none;
+}
+
+.messageInput textarea::placeholder {
+    color: white;
+}
+
+.messageInput i {
+    font-size: 50px;
+    cursor: pointer;
+}

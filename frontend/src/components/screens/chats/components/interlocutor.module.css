@@ -1,0 +1,57 @@
+.interlocutor {
+    background-color: rgb(62, 62, 62);
+    padding: 15px;
+    border-radius: 20px;
+    display: grid;
+    column-gap: 20px;
+    grid-template-areas: 'avatar username updated'
+                         'avatar message unread';
+    grid-template-columns: auto 1fr;
+    transition: background-color 0.5s ease;
+}
+
+.interlocutor:hover {
+    background-color: rgb(96, 96, 96);
+}
+
+
+.interlocutorAvatar {
+    grid-area: avatar;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.interlocutorName {
+    grid-area: username;
+    font-size: 20px;
+}
+
+.updated {
+    grid-area: updated;
+}
+
+.lastMessage {
+    grid-area: message;
+    color: rgb(165, 165, 165)
+}
+
+.unread {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: unread;
+    background-color: #ae79c0;
+    object-fit: cover;
+    border-radius: 50%;
+    justify-self: end;
+    aspect-ratio: 1/1;
+    padding: 2px;
+    text-align: center;
+    max-height: 100%;
+}
+
+.unreadChat {
+    background-color: #696969;
+}

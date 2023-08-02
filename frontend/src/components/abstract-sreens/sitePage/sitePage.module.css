@@ -1,0 +1,12 @@
+.pageContent {
+    margin: 1.5em 12% 0px 12%;
+    display: grid;
+    grid-template-areas: 'sidebar main';
+    grid-template-columns: 1fr 3fr;
+    align-items: start;
+}
+
+.content {
+    color: white;
+    grid-area: main;
+}

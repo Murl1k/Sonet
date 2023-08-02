@@ -1,0 +1,54 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 15px;
+    background-color: rgb(55, 55, 55);
+}
+
+.form textarea {
+    background-color: rgba(118, 118, 118, 0.64);
+    padding: 5px 10px 0px 10px;
+    color: white;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.submitButton {
+    margin-left: auto;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    border: none;
+    background-color: #868686;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #616161;
+}
+
+.clearButton {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.row input[type="file"] {
+    display: none;
+}
+
+.imageLabel {
+    cursor: pointer;
+    display: inline-flex;
+    gap: 10px;
+}
+
+

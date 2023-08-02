@@ -1,0 +1,71 @@
+.groupPreview {
+    display: flex;
+    padding: 30px;
+    gap: 15px;
+}
+
+.groupPreview img {
+    object-fit: cover;
+    flex-basis: 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.groupInfo {
+    flex-basis: 47%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.groupDescription {
+    background-color: rgb(70, 70, 70);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.groupStats {
+    flex-basis: 20%;
+    display: grid;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.actions span {
+    background-color: rgb(76, 76, 76);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+.groupFormWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.groupFormBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.groupFormContainer {
+    z-index: 2;
+}

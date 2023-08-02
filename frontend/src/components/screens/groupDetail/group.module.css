@@ -1,0 +1,14 @@
+.groupPage {
+    display: grid;
+    grid-template-areas: 'header' 
+                         'posts';
+    gap: 30px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}

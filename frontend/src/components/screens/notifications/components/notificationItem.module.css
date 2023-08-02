@@ -1,0 +1,28 @@
+.notification {
+    display: grid;
+    grid-template-areas: 'avatar action close';
+    background-color: rgb(57, 57, 57);
+    padding: 20px;
+    border-radius: 20px;
+    grid-template-columns: auto 10fr 1fr;
+    gap: 10px;
+}
+
+.userAvatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.remove {
+    justify-self: end;
+}
+
+.remove i:hover {
+    cursor: pointer;
+}
+
+.unread {
+    background-color: rgba(123, 121, 121);
+}
